@@ -1,4 +1,4 @@
-package lv.rvt;
+package rvt;
 
 public class Student {
     public String name;
