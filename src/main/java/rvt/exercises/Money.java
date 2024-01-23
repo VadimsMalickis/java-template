@@ -95,7 +95,7 @@ public class Money {
             return false;
         }
 
-        // convert the object into a Person object
+        // convert the object into a Money object
         Money comparedMoney = (Money) compared;
 
         // if the values of the object variables are equal, the objects are equal
