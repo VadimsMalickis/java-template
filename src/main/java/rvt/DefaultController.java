@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import rvt.exercises.Money;
+
 @Controller
 public class DefaultController {
 
@@ -24,21 +26,29 @@ public class DefaultController {
     }
 
     @GetMapping(value = "/about")
-    ModelAndView about(@RequestParam HashMap<String,String> allParams) {
-        ModelAndView modelAndView = new ModelAndView("about");
-        
+    ModelAndView about(@RequestParam HashMap<String, String> queryStringParams) {
+            ModelAndView modelAndView = new ModelAndView("about");
 
-        CsvManager manager = new CsvManager(CsvManager.HOBBIES_CSV);
+            String id = queryStringParams.get("id");
+            String title = queryStringParams.get("title");
+            String description = queryStringParams.get("description");
 
-        // manager.addHobby(
-        //     allParams.get("id"),
-        //     allParams.get("title"),
-        //     allParams.get("description")
-        // );
-        
+            // turpinat veidot html formu
+
+            return modelAndView;
+    }
+
+
+    // Metode priekš koda testēšanas
+    @GetMapping(value = "/test")
+    public ModelAndView testAction() {
+        ModelAndView modelAndView = new ModelAndView("test");
+
+
+        modelAndView.addObject("output1", 1);
+     
 
         return modelAndView;
     }
-
 
 }
