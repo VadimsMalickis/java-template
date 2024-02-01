@@ -14,6 +14,10 @@ public class Student {
         this.group = group;
     }
 
+    public Student() {
+        this("unknown", "unknown", "unknown", "unknown");
+    }
+
     public String getName() {
         return this.name;
     }

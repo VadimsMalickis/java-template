@@ -1,4 +1,4 @@
-package rvt;
+package rvt.exercises;
 
 public class Hobby {
     private int id;

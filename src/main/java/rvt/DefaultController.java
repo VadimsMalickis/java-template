@@ -3,6 +3,8 @@ package rvt;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -43,6 +45,17 @@ public class DefaultController {
         
         modelAndView.addObject("output1", 1);
      
+
+        return modelAndView;
+    }
+
+    @GetMapping(value = "/register")
+    public ModelAndView registrer() {
+        Student stundent = new Student();
+        ModelAndView modelAndView = new ModelAndView("registration/registration-page");
+        List<String> groups = new ArrayList<>(List.of("DP2-1", "DP2-2", "DP2-3", "DP2-4"));
+        modelAndView.addObject("student", stundent);
+        modelAndView.addObject("groups", groups);
 
         return modelAndView;
     }
