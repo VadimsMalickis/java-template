@@ -1,7 +1,1 @@
-name, surname, email, group
-John, Smith, home@rvt.lv, DP2-1
-Peter, Smith, home@rvt.lv, DP2-1
-Jack, Smith, home@rvt.lv, DP2-1
-Kaspars, Smith, home@rvt.lv, DP2-1
-Igors, Smith, home@rvt.lv, DP2-1
-Anna, Smith, home@rvt.lv, DP2-3
+name, surname, age, password, birthday, gender, married, note, email, group
