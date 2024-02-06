@@ -47,7 +47,9 @@ public class DefaultController {
         ModelAndView modelAndView = new ModelAndView("registration/registration-success");
 
 
+
         System.out.println(student.getGroup());
+
         System.out.println(student.getGender());
         System.out.println(student.isMarried());
 

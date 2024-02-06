@@ -2,6 +2,9 @@ package rvt;
 
 import java.time.LocalDate;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,8 +15,12 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Student {
+
+    @NotEmpty(message = "Vārds nevar būt tukšs")
+    @Pattern(regexp = "^[a-zA-Z]+$", message = "Only letters are allowed")
     private String name;
 
+    
     private String surname;
 
     private int age;
@@ -28,6 +35,7 @@ public class Student {
 
     private String note;
 
+    @Email
     private String email;
 
     private String group;
