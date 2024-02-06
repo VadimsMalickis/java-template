@@ -1,22 +1,16 @@
 package rvt;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
 public class DefaultController {
@@ -39,8 +33,7 @@ public class DefaultController {
     }
 
     @GetMapping(value = "/register")
-    public ModelAndView register(@ModelAttribute("student") Student student) {
-
+    public ModelAndView register() {
         ModelAndView modelAndView = new ModelAndView("registration/registration-page");
         List<String> groups = new ArrayList<>(List.of("DP2-1", "DP2-2", "DP2-3", "DP2-4"));
         modelAndView.addObject("groups", groups);
@@ -50,8 +43,13 @@ public class DefaultController {
     }
 
     @PostMapping(value = "/register")
-    public ModelAndView register(HttpServletRequest request, @ModelAttribute("student") Student student) {
+    public ModelAndView registerForm(@ModelAttribute("student") Student student) {
         ModelAndView modelAndView = new ModelAndView("registration/registration-success");
+
+
+        System.out.println(student.getGroup());
+        System.out.println(student.getGender());
+        System.out.println(student.isMarried());
 
         return modelAndView;
     }
