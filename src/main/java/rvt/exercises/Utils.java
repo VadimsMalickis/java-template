@@ -1,5 +1,6 @@
 package rvt.exercises;
 
+
 public class Utils {
     public static int binarySearch(int[] array, int searchedValue) {
         int startIndex = 0;

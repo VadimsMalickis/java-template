@@ -2,21 +2,24 @@ package rvt;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.MethodArgumentNotValidException;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.servlet.ModelAndView;
 
-import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
+import rvt.exercises.Book;
+import rvt.exercises.Box;
+import rvt.exercises.CD;
+import rvt.exercises.Packable;
+import rvt.exercises.Student;
 
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class DefaultController {
@@ -32,11 +35,15 @@ public class DefaultController {
     }
 
     @GetMapping(value = "/test")
-    public ModelAndView testAction() {
-        ModelAndView modelAndView = new ModelAndView("test");
-        modelAndView.addObject("output1", 1);
-        return modelAndView;
+    @ResponseBody
+    public String testAction() {
+        
+        Packable book = new Book("A", "B", 1);
+
+        return book.toString();
+        
     }
+
 
     @GetMapping(value = "/register")
     public ModelAndView showRegistrationForm() {
@@ -55,6 +62,12 @@ public class DefaultController {
         if (bindingResult.hasErrors()) {
             return "registration/registration-page";
         }
+
+      
+
+        // Save Student object to CSV
+        
+
         return "redirect:/register?success";
     }
 
