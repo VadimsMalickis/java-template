@@ -11,7 +11,8 @@
 			"installMaven": "true",
 			"installGradle": "false"
 		},
-		"ghcr.io/devcontainers/features/node:1": {}
+		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers-contrib/features/mysql-homebrew:1": {}
 	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
