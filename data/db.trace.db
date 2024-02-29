@@ -140,3 +140,72 @@ select next value for student_seq [90036-224]
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-02-29 13:08:14.481075Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]
+2024-02-29 13:10:59.897681Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]
+2024-02-29 13:11:04.102071Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]
+2024-02-29 13:11:19.333847Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]
+2024-02-29 13:11:21.463206Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]
+2024-02-29 13:11:23.589720Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]
+2024-02-29 13:18:02.424070Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]
+2024-02-29 13:18:22.534934Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found (this database is empty); SQL statement:
+insert into student (email,group,name,surname,id) values (?,?,?,?,?) [42104-224]
+2024-02-29 13:18:56.666121Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found (this database is empty); SQL statement:
+insert into student (email,group,name,surname,id) values (?,?,?,?,?) [42104-224]
+2024-02-29 13:18:57.777745Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found (this database is empty); SQL statement:
+insert into student (email,group,name,surname,id) values (?,?,?,?,?) [42104-224]
+2024-02-29 13:19:45.860399Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]
+2024-02-29 13:20:23.606182Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found (this database is empty); SQL statement:
+insert into student (email,group,name,surname,id) values (?,?,?,?,?) [42104-224]
+2024-02-29 13:28:09.510180Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]
+2024-02-29 13:28:57.339189Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]
+2024-02-29 13:29:23.115041Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]
+2024-02-29 13:29:36.993399Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found (this database is empty); SQL statement:
+insert into student (email,group,name,surname,id) values (?,?,?,?,?) [42104-224]
+2024-02-29 13:29:38.253709Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found (this database is empty); SQL statement:
+insert into student (email,group,name,surname,id) values (?,?,?,?,?) [42104-224]
+2024-02-29 13:29:39.284868Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found (this database is empty); SQL statement:
+insert into student (email,group,name,surname,id) values (?,?,?,?,?) [42104-224]
+2024-02-29 13:30:10.252323Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]
+2024-02-29 13:32:14.835631Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]
+2024-02-29 13:32:49.363788Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]
+2024-02-29 13:33:03.934832Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]
+2024-02-29 13:34:05.069625Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table student (id bigint not null, email varchar(255), [*]group varchar(255), name varchar(255), surname varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table student (id bigint not null, email varchar(255), group varchar(255), name varchar(255), surname varchar(255), primary key (id)) [42001-224]

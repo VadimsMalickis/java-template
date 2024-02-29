@@ -9,6 +9,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -22,6 +23,6 @@ public class Student {
     public String name;
     public String surname;
     public String email;
-    public String group;
+    public String studentGroup;
 
 }

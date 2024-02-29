@@ -27,7 +27,7 @@ public class DefaultController {
             .name("John")
             .surname("Smith")
             .email("e@rvt.lv")
-            .group("DP2-5")
+            .studentGroup("DP2-5")
             .build()
         ;
         List<Student> students = new ArrayList<>();
@@ -46,7 +46,7 @@ public class DefaultController {
             .name("John")
             .surname("Smith")
             .email("e@rvt.lv")
-            .group("DP2-5")
+            .studentGroup("DP2-5")
             .build()
         ;
 
