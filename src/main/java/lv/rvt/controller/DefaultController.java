@@ -42,6 +42,13 @@ public class DefaultController {
     @GetMapping(value = "/test")
     @ResponseBody
     public String testAction() {
+        StringBuilder output = new StringBuilder();
+
+
+        return output.toString();
+    }
+
+    public String addStudent() {
         Student student = Student.builder()
             .name("John")
             .surname("Smith")
