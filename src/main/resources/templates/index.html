@@ -8,7 +8,6 @@
     <script src="/js/main.js"></script>
 </head>
 <body>
-    <p>Get your student <a href="/student">here</a></p>
     <h1>Spring Boot!</h1>
    
     <h3 th:text="'Today is: ' + ${date}"></h3>
@@ -24,7 +23,7 @@
             <td th:text="${student.name}"></td>
             <td th:text="${student.surname}"></td>
             <td th:text="${student.email}"></td>
-            <td th:text="${student.group}"></td>
+            <td th:text="${student.studentGroup}"></td>
         </tr>
     </table>
 </body>

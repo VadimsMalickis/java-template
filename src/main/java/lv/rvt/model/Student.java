@@ -1,4 +1,4 @@
-package lv.rvt.entity;
+package lv.rvt.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

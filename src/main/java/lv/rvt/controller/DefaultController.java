@@ -12,17 +12,20 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import lv.rvt.entity.Student;
+import lv.rvt.model.Student;
 import lv.rvt.repository.StudentRepository;
 
 @Controller
 public class DefaultController {
+   
+    private final StudentRepository studentRepository;
 
-    @Autowired
-    private StudentRepository studentRepository;
+    public DefaultController(StudentRepository studentRepository) {
+        this.studentRepository = studentRepository;
+    }
     
-    @GetMapping(value = "/")
-    ModelAndView index(@RequestParam(name="name", required=false, defaultValue="null") String name) {
+    @GetMapping("/")
+    ModelAndView index() {
         Student student = Student.builder()
             .name("John")
             .surname("Smith")
@@ -35,7 +38,7 @@ public class DefaultController {
 
         ModelAndView modelAndView = new ModelAndView("index");
         modelAndView.addObject("students", students);
-        modelAndView.addObject("date", new Date().toString());
+        modelAndView.addObject("date", new Date());
         return modelAndView;
     }
 

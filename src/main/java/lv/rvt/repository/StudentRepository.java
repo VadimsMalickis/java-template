@@ -4,7 +4,7 @@ import java.util.Optional;
 
 import org.springframework.data.repository.Repository;
 
-import lv.rvt.entity.Student;
+import lv.rvt.model.Student;
 
 
 public interface StudentRepository extends Repository<Student, Long> {
